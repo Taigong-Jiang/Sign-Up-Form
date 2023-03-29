@@ -1,0 +1,93 @@
+body {
+    font-size: 16px;
+    font-family: "Nunito" sans-serif;
+    color: #384047;
+}
+
+form {
+    max-width: 580px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #F4F7F8;
+    border-radius: 8px;
+    
+}
+
+h1 {
+    margin: 0px 0px 30px;
+    /* 这是一组，后两个有什么区别和作用？ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input, select {
+    margin: 0px 0px 30px;
+    /* 什么作用？ */
+    box-sizing: border-box;
+}
+
+.dark, select { 
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    height: auto;
+    padding: 15px 10px;
+    width: 100%;
+    background-color: #E8EEEF;
+    color: #8A97A0;
+    /* 什么作用？ */
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    border-radius: 5px;
+}
+
+.light {
+    /* 什么作用？ */
+    margin: 0px 4px 8px 0;
+}
+
+button {
+    margin: 0px 0px 10px;
+    padding: 10px;
+    color: #FFFFFF;
+    background-color: #4BC970;
+    font-size: 18px;
+    /* 什么作用？ */
+    font-style: normal;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+fieldset {
+    margin: 0px 0px 30px;
+    /* padding: 5.6px 12px 10px; */
+    border: none;
+}
+
+legend {
+    font-size: 1.4em;
+    margin: 0px 0px 10px;
+    /* 以下两行的作用？ */
+    display: flex;
+    align-items: center;
+}
+
+legend::before {
+    content: "";
+    background-color: #007A5A;
+    width: 16px;
+    height: 16px;
+    /* 什么作用？ */
+    vertical-align: middle;
+    border-radius: 8px;
+    /* 什么作用？ */
+    display: inline-block;
+    margin: 0px 15px 0px 0px;
+}
+
+/* 详细了解下列代码 */
+@media screen and (max-width: 580px) {
+    form {
+        width: 300px;
+    }
+}
